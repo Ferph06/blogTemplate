@@ -3,20 +3,102 @@ nav{
    
 }
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.texto-rot{
+    position: relative;
+    margin-top: 3em;
+    font-size: 1.9em;
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    
+}
+
+.title-form{
+    color: aliceblue;
+    width: 45px;
+    margin-left: -0.8em;
+    height: 14em;
+    position: fixed;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius:3px ;
+}
+
+.login-contendor{
+  margin-top: 80px;   
+}
+
+.btn-float-send{
+     position: fixed;
+     margin-left: 22em;
+    margin-top: 12px
+}
+.btn-float-register{
+     position: fixed;
+     margin-left: 25em;
+     margin-top: 9em;
+}
 html{
     background-color: #ffffff ;
 }
 .nav-fixed-form{
   height: 250px !important;   
 }
+.blog-barra-lateral{
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+     width: 17%;
+}
+.img-contenedor-wrapper{
+    max-width:50%;
+max-height:50%;
+}
+
 .blogcontenedor{
-    margin-top: 60px;
+    margin-top: 70px;
     margin-left: 10%;
     background-color: #eceff1  ;
     position: absolute;
     bottom: 0;
     width: 80vw !important;
     top: 0;
+}
+.btn-wrapper-bottom{
+   top: 35px;
+   border-radius: 15px 15px 15px 15px;
+}
+.input_image{
+    background-color:#000; 
+    height:130px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:130px;
+    opacity: 0.1%;
+    margin-top: -37px;
+    margin-left:110px;
+    z-index:1;
+}
+.formRegistro{
+    background-color: #ffffff;
+    margin-top: 25px;
 }
 
 @media(max-width:992px){
@@ -25,8 +107,21 @@ html{
         height: auto !important;
     }
     .blogcontenedor{
-        display: none;
+         position: fixed;
+        bottom: 0;
+         width: 80vw !important;
+        top: 0;
         
+    }
+    .nav-fixed-form{
+    height: auto !important;   
+    }
+    .input_image{
+        margin-left:75px;
+    }
+    .formRegistro{
+        height: 350px;
+        width: 60% !important;
     }
     
 }
