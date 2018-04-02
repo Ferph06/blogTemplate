@@ -1,13 +1,49 @@
 nav{
     background-color: #0097a7 !important;
-   
+
 }
 
+
+.wrapper-img img{
+    height: 7em;
+    max-height: 1000px;
+     opacity: 0.8 !important;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+.wrapper-img img:hover{
+    cursor: pointer;
+     opacity: 1 !important;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
 *{
     padding: 0;
     margin: 0;
 }
-
+.wrapper-btn-love{
+    bottom: 5em !important;
+    right: 5px !important;
+}
+.wrapper-btn-love:hover{
+    cursor:default;
+}
+.wrapper-btn-love-h{
+    bottom: 8em !important;
+    right: 3px !important;
+}
+.wrapper-btn-love-h:hover{
+    cursor:default;
+}
+.wrapper-img-h img{
+    height: 10em;
+    max-height: 1000px;
+     opacity: 0.8 !important;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+.wrapper-img-h img:hover{
+    cursor: pointer;
+    opacity: 1 !important;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
 .texto-rot{
     position: relative;
     margin-top: 3em;
@@ -60,11 +96,20 @@ html{
   height: 250px !important;   
 }
 .blog-barra-lateral{
-    z-index: -1;
-    position: fixed;
-    bottom: 0;
-    top: 0;
+    z-index: 1;
+    position: relative ;
+    bottom: 0 !important;
+    top: 0 !important;
      width: 17%;
+    
+}
+.blog-barra-lateral-fix{
+     z-index: 1;
+    position: fixed;
+    bottom: 0 !important;
+    top: 0 !important;
+     width: 17%;
+    
 }
 .img-contenedor-wrapper{
     max-width:50%;
