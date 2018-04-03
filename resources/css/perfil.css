@@ -7,8 +7,12 @@
     margin-left: 31%;
     top: 0;
     margin-top: -8em;
-    width: 200px;
-    height: 200px;
-    position: relative  ;
-    border-radius: 50%;
+    width: auto;
+    height: auto    ;
+    position: relative;
+   
+}   
+.edit{
+    bottom: 140px !important;
+    right: 10px !important;
 }

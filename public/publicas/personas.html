@@ -1,56 +1,113 @@
-<!DOCTYPE html>
-  <html>
+    <!DOCTYPE html>
+    <html>
+
     <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="./../../resources/css/materialize.min.css"  media="screen,projection"/>
-        <link type="text/css" rel="stylesheet" href="./../../resources/css/general.css"  media="screen,projection"/>
-        <link type="text/css" rel="stylesheet" href="./../../resources/css/perfil.css"  media="screen,projection"/>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <meta charset="UTF-8"> 
-        <meta name="description" content="Blogs">
-        <meta name="keywords" content="HTML,CSS,XML,JavaScript,Multimedia">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./../../resources/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="./../../resources/css/general.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="./../../resources/css/perfil.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="Blogs">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,Multimedia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
+
     <body>
-      <nav class="nav-extended ">
-    <div class="nav-wrapper " >
-      <a href="#!" class="brand-logo">BG</a>
-         <a href="./../../public/publicas/index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="./../../public/publicas/blogs.html">Blogs</a></li>
-        <li><a href="./../../public/publicas/login.html"><i class="material-icons left">assignment_ind</i>Iniciar Sesion</a></li>
-      </ul>
+    <nav class="nav-extended ">
+    <div class="nav-wrapper ">
+        <a href="#!" class="brand-logo">BG</a>
+        <a href="./../../public/publicas/index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="./../../public/publicas/blogs.html">Blogs</a></li>
+            <li><a href="./../../public/publicas/login.html"><i class="material-icons left">assignment_ind</i>Iniciar Sesion</a></li>
+        </ul>
     </div>
     </nav>
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="./../../public/publicas/blogs.html">Blogs</a></li>
-          <li><a href="./../../public/publicas/login.html"><i class="material-icons left">assignment_ind</i>Iniciar Sesion</a></li>
-      </ul>
+    <ul class="sidenav" id="mobile-demo">
+    <li><a href="./../../public/publicas/blogs.html">Blogs</a></li>
+    <li><a href="./../../public/publicas/login.html"><i class="material-icons left">assignment_ind</i>Iniciar Sesion</a></li>
+    </ul>
+    <div class="row">
+    <div class="col s2 m2 l2"></div>
+    <div class="col m3 s3 l3 offset-m2 offset-s2 offset-l2">
+        <div class="card z-depth-3">
+            <div class="card-image">
+                    <img src="./../../resources/img/material.png " class=" z-depth-2" />
+                 <a data-target="editarUsuario" class="hoverable modal-trigger btn-floating halfway-fab waves-effect waves-light blue edit z-depth-2"><i class="material-icons">edit</i></a>
+            </div>
             <div class="row">
-               <div class="col m4 s4 l4 card offset-s4 offset-m4 offset-l4 z-depth-2">
-                  <div class="row">
-                    <img src="./../../resources/img/material.png " class="responsive-img z-depth-2" style="z-index: -1px;" />
-                      <div class="col s12 m12 l12 ">
-                          <div class="img-perfil ">
-                            <img class="circle responsive-img " src="./../../resources/img/user_reg.png"/>
-                          </div>
-                      </div>
-                      <div class="col s12 m12 l12">
-                        <p>Nombre </p>
-                      </div>
-                      <!--div class="col s12 m12 l12">
-                          <img  style="width: 15em;height: 100%;"   />
-                      </div-->
-                    <!--div class="col s4 m4 l4 offset-s4 offset-l4 offset-m4">
-                       <img class="circle responsive-img" src="https://i.ytimg.com/vi/C5wBkVrZAbo/maxresdefault.jpg"/>
-                    </div-->  
-                 </div>
+                <div class="col s10 m8 l10 ">
+                    <div class="img-perfil">
+                        <img class="circle responsive-img" src="./../../resources/img/user_reg.png"  />
+                    </div>
+                </div>
+                <div class="col s5 m5 l5 offset-s1 offset-m1 offset-l1">
+                    <div class="collection">
+                        <a class="collection-item active">Nombre</a>
+                    </div>
+                </div>
+                <div class="col s5 m5 l5">
+                    <div class="collection">
+                        <a class="collection-item active">Apellido Paterno</a>
+                    </div>
+                </div>
+                <div class="col s5 m5 l5 offset-s1 offset-m1 offset-l1">
+                    <div class="collection">
+                        <a class="collection-item active">Apellido materno</a>
+                    </div>
+                </div>
+                <div class="col s5 m5 l5 offset-s1 ">
+                    <div class="collection">
+                        <a class="collection-item active">Fecha nacimiento</a>
+                    </div>
+                </div>
+                <div class="col s12 m12 l12">
+                    <div class="collection">
+                        <a class="collection-item active">lore</a>
+                    </div>
+                </div>
             </div>
         </div>
-      <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="./../../resources/plugins/materialize.min.js"></script>
-        <script type="text/javascript" src="./../../resources/js/core.js"></script>
+    </div>
+    </div>
+    <div id="editarUsuario" class="modal " >
+        <div class="modal-content" >
+            <div class="row">
+                <form id="formEditar">
+                  <div class="input-field col s6">
+                            <input id="nombre" type="text" class="validate">
+                            <label for="nombre">Nombre</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="APP" type="text" class="validate">
+                            <label for="APP">Apellido Paterno</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="APM" type="text" class="validate">
+                            <label for="APM">Apellido Materno</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="username" type="text" class="validate">
+                            <label for="username">Username</label>
+                        </div>
+                    <div class="input-field col s6 offset-s3" >
+                          <input type="text" id="nacimiento" class="datepicker">
+                             <label for="nacimiento">Fecha de nacimiento</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+         <div class="modal-footer  blue-grey darken-4">
+          <a href="#!" class=" waves-effect waves-light teal btn btn-small">Aceptar</a>
+        <a href="#!" class="modal-action modal-close waves-effect waves-light btn btn-small red">Cancelar</a>
+        </div>
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="./../../resources/plugins/materialize.min.js"></script>
+    <script type="text/javascript" src="./../../resources/js/core.js"></script>
     </body>
-  </html>
+
+    </html>

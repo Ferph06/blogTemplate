@@ -170,3 +170,28 @@ max-height:50%;
     }
     
 }
+
+@media(min-width:1024px){
+    .btn-float-send{
+     position: fixed;
+     margin-left: 32em;
+    margin-top: 12px
+}
+    .btn-float-register{
+         position: fixed;
+         margin-left: 35.2em;
+         margin-top: 9em;
+    }
+    .input_image{
+    background-color:#000; 
+    height:130px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:130px;
+    opacity: 0.1%;
+    margin-top: -37px;
+    margin-left:150px;
+    z-index:1;
+}
+}
